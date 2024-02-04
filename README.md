@@ -1,4 +1,4 @@
-My portfolio
+My portfolio </br>
 Welcome to my GitHub repository hosting my personal portfolio!
 As a recent graduate in Software Engineering with a specialization in Intelligence
 Artificial and with a year of practical experience, this portfolio reflects my career,
