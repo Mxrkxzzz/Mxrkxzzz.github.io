@@ -226,7 +226,6 @@ header #menu-btn:hover{
 /*--------------------- 4- Home Area CSS (Start) ---------------------*/
 .home{
     padding: 0rem 5%;
-    background-color: var(--black);
     min-height: 100vh;
 }
 
@@ -604,7 +603,7 @@ header #menu-btn:hover{
         flex: 1 1 33rem;
     background-color: var(--black);
     padding: 4rem 3rem;
-    text-align: center;
+    text-align: justify;
     border: 0.1rem solid rgba(255,255, 255, 0.3);
     border-radius: 0.5rem;
     -webkit-transition: all 0.5s linear;
@@ -1182,3 +1181,56 @@ footer .content p span{
   }
 
 /*--------------------- 13- Scroll-Top (End) ---------------------*/
+
+
+
+/* ------------------------------------------------------------------------- */
+
+.container1 {
+    width: 100%;
+    height: 100%;
+    display:flex;
+    position: fixed;
+    z-index: -1;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .loader1 {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #e8e8e8;
+    border: 4px solid #e8e8e8;
+    box-shadow: 0 0 3px #e8e8e8;
+    filter: blur(.4px);
+  }
+  
+  .shadow1 {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-color: #000000;
+    top: -5px;
+    left: 0;
+    animation: animate 3s infinite 1.5s;
+  }
+  
+  @keyframes animate {
+    0% {
+      transform: translateX(150px);
+      background-color: #000000;
+    }
+  
+    50% {
+      transform: translateX(-10px);
+      background-color: #000000;
+    }
+  
+    100% {
+      transform: translateX(-170px);
+      background-color: #000000;
+    }
+  }
+  
+  

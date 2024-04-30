@@ -70,8 +70,13 @@
         padding: 1rem;
     }
 
+}
 
 
+@media (max-width: 1230px){
+    .container1{
+        content-visibility:hidden !important;
+    }   
 }
 
 /*--------------------- Responsive (End) ---------------------*/
