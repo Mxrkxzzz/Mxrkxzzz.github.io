@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="assets/images/About/21.ico" rel="icon" style="border-radius: 50%;">
+	<link href="assets/images/About/21.ico" rel="icon">
 
     <!-- Title -->
-    <title> Marcos | Marcxs-Portfolio</title>
+    <title>Marcxs-Portfolio</title>
 
     <!-- Font-Awesome CSS -->
     <link rel="stylesheet" href="assets/vendors/font-awesome/css/all.min.css" />
@@ -26,11 +26,11 @@
 
 </head>
 
-<div class="container1">
+<!-- <div class="container1">
     <div class="loader1">
         <div class="shadow1"></div>
     </div>
-</div>
+</div> -->
 
 
 <body>
@@ -40,14 +40,12 @@
     </a>
     <!-------------------- Scroll-Top Area (End) -------------------->
 
-        
-
     <!-------------------- Header Area (Start) -------------------->
     <header class="header">
 
         <!-- Logo -->
         <a class="logo" href="#home">
-            <h2> Marcxs </h2> 
+            <h2><span class="logo-text"></span></h2> 
             <!-- <img src="assets/images/logo.png" alt="logo" /> -->
         </a>
         <!-- Logo End -->
@@ -57,7 +55,7 @@
             <a href="#home">Home</a>
             <a href="#about">About me</a>
             <a href="#service">Service</a>
-            <a href="#portfolio">Portfolio</a>
+            <a href="#portfolio">Proyects</a>
             <a href="#contact">Contact</a>
         </nav>
 
@@ -66,7 +64,6 @@
         
     </header>
     <!-------------------- Header Area (End) -------------------->
-
 
     <!-------------------- Home Area (Start) -------------------->
     <section class="home" id="home">
@@ -78,7 +75,21 @@
                     <h2>hi there!</h1>
                     <h1>I Am a <span class="typing-text"></span></h1>
                     <p> passionate programmer delighted to explore new technologies and apply them in creative way to develop efficient, advanced software and discover how programming and AI can converge to transform ideas into reality.</p>
-                    <a href="#about" class="btn">about me <i class="fas fa-user"></i></a>
+                    <a href="#about">
+                    <button class="button1">
+                        M E
+                        <div id="clip">
+                            <div id="leftTop" class="corner"></div>
+                            <div id="rightBottom" class="corner"></div>
+                            <div id="rightTop" class="corner"></div>
+                            <div id="leftBottom" class="corner"></div>
+                        </div>
+                        <span id="rightArrow" class="arrow"></span>
+                        <span id="leftArrow" class="arrow"></span>
+                    </button>
+                    </a>
+                    <!-- <a href="#about" class="btn">about me <i class="fas fa-user"></i></a> -->
+                    
                 </div>
             </div>
     
@@ -92,16 +103,31 @@
 
     <!-------------------- Home Area (End) -------------------->
 
-
-
     <!-------------------- About Area (Start) -------------------->
     <section class="about" id="about">
 
         <div class="box-container">
 
-            <div class="image">
-                <img src="assets/images/Home/foto1.png" alt="About-Image" />
+            <div class="card-container">
+                <div class="card">
+                <div class="img-content">
+                    <img src="assets/images/About/21.ico" alt="About-Image"/>
+                </div>
+                <!-- <div class="content">
+                  <p class="heading">Card Hover</p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipii
+                    voluptas ten mollitia pariatur odit, ab
+                    minus ratione adipisci accusamus vel est excepturi laboriosam magnam
+                    necessitatibus dignissimos molestias.
+                  </p>
+                </div> -->
+              </div>
             </div>
+
+            <!-- <div class="image">
+                <img src="assets/images/Home/foto1.png" alt="About-Image"/>
+            </div> -->
     
             <div class="content">
 
@@ -116,7 +142,17 @@
                         <h4>language: <span>Spanish, English</span></h4>
                         <h4>work: <span>Software with artificial intelligence</span></h4>
                         <h4>freelance: <span>available</span></h4>
-                        <a href="/HTML/cvactualizado.pdf" class="btn">download CV <i class="fas fa-download"></i></a>
+                        <a href="/HTML/cvactualizado.pdf" download>
+                            <button class="Download-button">
+                              <svg viewBox="0 0 640 512" width="20" height="16" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  fill="white"
+                                  d="M144 480C64.5 480 0 415.5 0 336c0-62.8 40.2-116.2 96.2-135.9c-.1-2.7-.2-5.4-.2-8.1c0-88.4 71.6-160 160-160c59.3 0 111 32.2 138.7 80.2C409.9 102 428.3 96 448 96c53 0 96 43 96 96c0 12.2-2.3 23.8-6.4 34.6C596 238.4 640 290.1 640 352c0 70.7-57.3 128-128 128H144zm79-167l80 80c9.4 9.4 24.6 9.4 33.9 0l80-80c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-39 39V184c0-13.3-10.7-24-24-24s-24 10.7-24 24V318.1l-39-39c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9z"
+                                ></path>
+                              </svg>
+                              <span>Download CV</span>
+                            </button>
+                          </a>
                     </div>
 
                     <div class="counting">
@@ -189,8 +225,6 @@
     </section>
     <!-------------------- About Area (End) -------------------->
 
-    
-
     <!-------------------- Qualification Area (Start) -------------------->
     <section class="qualification">
 
@@ -216,7 +250,7 @@
                 <div class="experience-item">
                     <i class="fas fa-briefcase"></i>
                     <div class="content">
-                        <span>2023</span>
+                        <span>2024</span>
                         <h3>Movilnet Perú Comunicaciones S.A.C. (SYSTEM TECHNIQUE) </h3>
                         <p> • Systems area leader. <br />
                             • Creation of pages and websites that are functional and intuitive for the user. <br />
@@ -256,10 +290,7 @@
 
         </div>
     </section>
-
     <!-------------------- Qualification Area (End) -------------------->
-
-
 
     <!-------------------- Services Area (Start) -------------------->
     <section class="service" id="service">
@@ -293,22 +324,20 @@
     </section>
     <!-------------------- Services Area (End) -------------------->
 
-
-
     <!-------------------- Portfolio Area (Start) -------------------->
     <section class="portfolio" id="portfolio">
 
         <div class="heading">
-            <h2>my <span>portfolio</span></h2>
+            <h2>my <span>Proyects</span></h2>
         </div>
 
         <div class="gallery">
 
             <ul class="controls">
-                <li class="button btn active" data-filter="all">all</li>
-                <li class="button btn" data-filter="web">web development</li>
-                <li class="button btn" data-filter="mobile">mobile developer</li>
-                <li class="button btn" data-filter="ia">artificial intelligence</li>
+                <li class="button btn active" data-filter="all" id="bottone1"><strong>all</strong></li>
+                <li class="button btn active" data-filter="web" id="bottone1"><strong>web development</strong></li>
+                <li class="button btn active" data-filter="mobile" id="bottone1"><strong>mobile developer</strong></li>
+                <li class="button btn active" data-filter="ia" id="bottone1"><strong>artificial intelligence</strong></li>
             </ul>
     
             <div class="box-container">
@@ -385,9 +414,7 @@
     </section>
     <!-------------------- Portfolio Area (End) -------------------->
 
-
-
-   <!-- ---------------- Testimonials Area (Start) ------------------
+    <!-- ---------------- Testimonials Area (Start) ------------------
     <section class="testimonial" id="testimonial">
 
         <div class="heading">
@@ -456,12 +483,10 @@
             <div class="swiper-pagination swiper-pagination1"></div>
 
         </div>
-    </section> -->
-    <!-------------------- Testimonials Area (End) ------------------
+    </section> 
+   <-------------------- Testimonials Area (End) ------------------>
 
-
-
-    <-------------------- Blog Area (Start) --------------------
+    <!-------------------- Blog Area (Start) --------------------
     <section class="blog" id="blog">
 
         <div class="heading">
@@ -563,9 +588,7 @@
         </div>
 
     </section>
-    ------------------- Blog Area (End) -------------------->
-
-
+    <------------------- Blog Area (End) ------------------->
 
     <!-------------------- Contact Area (Start) -------------------->
     <section class="contact" id="contact">
@@ -620,13 +643,25 @@
             </div>
     
             <form method="post" class="contact-form" id="contactUs-Form">
-                    
+
                 <input type="text" name="name" class="box" id="name" placeholder="name" required />
                 <input type="email" name="email" class="box" id="email" placeholder="email" required />
                 <input type="text" name="subject" class="box" id="subject" placeholder="subject" required />
                 <textarea cols="30" rows="10" name="comment" id="comment" class="box" placeholder="message"></textarea>
-                <button type="submit" class="btn" name="submit" id="submit">send message</button>
-                
+                <button type="submit" class="animated-button" class="btn" name="submit" id="submit">
+                    <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                      ></path>
+                    </svg>
+                    <span class="text">Send message</span>
+                    <span class="circle"></span>
+                    <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                      ></path>
+                    </svg>
+                  </button>
                 <span class="alert" id="msg"></span>
                 
             </form>
@@ -636,19 +671,59 @@
     </section>
     <!-------------------- Contact Area (End) -------------------->
 
-
-
     <!-------------------- Footer Area (Start) -------------------->
     <footer>
         <div class="social">
-            <a href="https://github.com/marcxsss" class="fab fa-github"></a>
-            <a href="https://www.instagram.com/just_marcxs/" class="fab fa-instagram"></a>
-            <a href="https://www.linkedin.com/in/marcos-aliaga-a6288b20a/" class="fab fa-linkedin-in"></a>
+            <ul class="example-2">
+                <li class="icon-content">
+                  <a
+                    href="https://www.linkedin.com/in/marcos-aliaga-a6288b20a/"
+                    aria-label="LinkedIn"
+                    data-social="linkedin"
+                  >
+                    <div class="filled"></div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-linkedin"
+                      viewBox="0 0 16 16"
+                      xml:space="preserve"
+                    >
+                      <path
+                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                  </a>
+                  <div class="tooltip">LinkedIn</div>
+                </li>
+                <li class="icon-content">
+                  <a href="https://github.com/marcxsss" aria-label="GitHub" data-social="github">
+                    <div class="filled"></div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-github"
+                      viewBox="0 0 16 16"
+                      xml:space="preserve"
+                    >
+                      <path
+                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                  </a>
+                  <div class="tooltip">GitHub</div>
+                </li>
+              </ul>
+              
         </div>
     </footer>
     <!-------------------- Footer Area (End) -------------------->
-
-
 
     <!-- JQuery -->
     <script src="assets/vendors/jquery/jquery-3.6.0.js"></script>
@@ -676,8 +751,15 @@
     <script>
         var typed = new Typed('.typing-text', {
 
-            strings: ['Web developer', 'Software Engineering Technician with Intelligence Artificial'],
+            strings: ['Web developer Junior', 'Software Engineering Technician with A.I.'],
             typeSpeed: 120,
+            loop: true
+        });
+
+        var typed = new Typed('.logo-text', {
+
+            strings: ['MARCXS'],
+            typeSpeed: 250,
             loop: true
         });
     </script>
